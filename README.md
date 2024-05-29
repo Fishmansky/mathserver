@@ -22,7 +22,7 @@ $ curl "http://localhost:8080/fibo/10"
 2. Is X a prime number?
 ```bash
 $ curl "http://localhost:8080/isprime/4"
-{"result":"false"}%
+{"result":"false"}
 $ curl "http://localhost:8080/isprime/3"
 {"result":"true"}
 ```
