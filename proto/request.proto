@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "protoserver/proto";
+package proto;
+
+message Request {
+	int64 a = 1;
+}
+
+message Response {
+	string result = 1;
+}
+
+service MathService {
+	rpc Fibo(Request) returns (Response);
+	rpc IsPrime(Request) returns (Response);
+}
